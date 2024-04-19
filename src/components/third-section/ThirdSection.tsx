@@ -235,9 +235,9 @@ const ThirdSection: React.FC<ThirdSectionProps> = ({ scrollToContact }) => {
             </motion.div>
           ))}
         </div>
-        <p className="text-lg md:text-lg font-header  text-gray-600 mt-6 md:mt-12 text-center px-4">
-          استثمر في موقع ويب فريد يبرزك بين المنافسين. استعد لتحقيق أحلامك
-          الرقمية مع فريق{" "}
+        <p className="text-lg md:text-lg font-header  text-gray-600 mt-6 md:mt-12 text-center ">
+          استثمر في موقع ويب فريد يبرزك بين المنافسين. <br />
+          استعد لتحقيق أحلامك الرقمية مع فريق{" "}
           <span className="font-sans text-primary font-bold">سيي ميديا</span>
         </p>
       </div>

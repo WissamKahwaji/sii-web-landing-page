@@ -75,7 +75,7 @@ const SamplesSection: React.FC<SamplesSectionProps> = ({ scrollToContact }) => {
         className="pb-4 mt-8 md:mx-20 mx-4"
       >
         {appSamples.map((sample, index) => (
-          <div className="object-cover rounded-md border border-primary hover:shadow-lg md:mx-2 h-[310px] md:h-[610px]">
+          <div className="object-cover rounded-md border border-primary hover:shadow-lg md:mx-2  md:h-[610px]">
             <img
               src={sample}
               alt={`sample-${index}`}
