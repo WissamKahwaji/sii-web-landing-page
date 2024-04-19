@@ -62,7 +62,7 @@ const FirstSection: React.FC<FirstSectionProps> = ({ scrollToContact }) => {
               ادعم انطلاقة مشروعك بامتلاك لموقع الكتروني وعزز التفاعل مع عملائك
             </p>
             <p className="text-white font-header font-bold text-lg md:text-2xl ">
-              لا تتردد بالتواصل معنا
+              !! لا تتردد بالتواصل معنا
             </p>
           </div>
         </motion.div>

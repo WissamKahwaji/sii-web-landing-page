@@ -9,7 +9,7 @@ const TitleAndBody = (props: TitleAndBodyProps) => {
   return (
     <div className="flex flex-col md:border-l-2 border-secondary/20 px-2 space-x-2">
       <div className="flex flex-row justify-start items-center">
-        <Lottie animationData={pointIcon} className="w-16 h-16" />
+        <Lottie animationData={pointIcon} className="w-12 h-8" />
         <p className="text-2xl font-header text-secondary mb-4 text-start">
           {props.title}
         </p>

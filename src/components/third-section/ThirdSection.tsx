@@ -199,7 +199,9 @@ const ThirdSection: React.FC<ThirdSectionProps> = ({ scrollToContact }) => {
           بتجربة{" "}
           <span className="text-primary font-semibold">موقع ويب استثنائية</span>{" "}
           مع فريق{" "}
-          <span className="font-sans text-primary font-bold">سيي ميديا !</span>
+          <span className="font-sans text-primary font-bold text-2xl">
+            سيي ميديا !
+          </span>
         </p>
       </div>
       <div className="bg-primary/10 py-10 px-2 md:px-20">
@@ -237,7 +239,8 @@ const ThirdSection: React.FC<ThirdSectionProps> = ({ scrollToContact }) => {
         </div>
         <p className="text-lg md:text-lg font-header  text-gray-600 mt-6 md:mt-12 text-center ">
           استثمر في موقع ويب فريد يبرزك بين المنافسين. <br />
-          استعد لتحقيق أحلامك الرقمية مع فريق{" "}
+          استعد لتحقيق أحلامك الرقمية <br />
+          مع فريق{" "}
           <span className="font-sans text-primary font-bold">سيي ميديا</span>
         </p>
       </div>

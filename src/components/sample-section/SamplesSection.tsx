@@ -66,7 +66,8 @@ const SamplesSection: React.FC<SamplesSectionProps> = ({ scrollToContact }) => {
         بعض من أعمالنا
       </p>
       <p className="text-secondary font-header font-semibold text-base md:text-2xl">
-        حقق تواجد فعال مع جمهورك من خلال متجرك الالكتروني المتكامل
+        حقق تواجد فعال مع جمهورك من خلال <br />
+        متجرك الالكتروني المتكامل
       </p>
       <Carousel
         responsive={RESPONSIVE}

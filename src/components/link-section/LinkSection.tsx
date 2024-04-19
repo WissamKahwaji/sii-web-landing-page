@@ -17,8 +17,11 @@ const LinkSection = () => {
       </div>
       <div className="bg-gradient-to-r from-gray-900 to-gray-700 p-4">
         <p className="text-lg md:text-2xl font-header font-semibold text-gray-300 leading-8">
-          اكتشف المزيد من خدماتنا الا محدودة بأفضل العروض وأعلى جوده مع شركة{" "}
-          <span className="font-bold font-sans text-white">سيي ميديا</span>
+          اكتشف المزيد من خدماتنا الا محدودة بأفضل العروض وأعلى جوده <br />
+          مع شركة{" "}
+          <span className="font-bold font-sans text-white text-2xl">
+            سيي ميديا
+          </span>
         </p>
       </div>
     </div>
