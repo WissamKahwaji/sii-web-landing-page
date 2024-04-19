@@ -1,14 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import MedicalServicesIcon from "@mui/icons-material/MedicalServices";
-import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
-import SchoolIcon from "@mui/icons-material/School";
-import LocalShippingIcon from "@mui/icons-material/LocalShipping";
-import ApartmentIcon from "@mui/icons-material/Apartment";
+import LocalPharmacyIcon from "@mui/icons-material/LocalPharmacy";
+import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
+import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
+import DeliveryDiningIcon from "@mui/icons-material/DeliveryDining";
+import BusinessIcon from "@mui/icons-material/Business";
 import CarRentalRoundedIcon from "@mui/icons-material/CarRentalRounded";
-import LocalMallRoundedIcon from "@mui/icons-material/LocalMallRounded";
-import RestaurantMenuRoundedIcon from "@mui/icons-material/RestaurantMenuRounded";
+import StoreMallDirectoryIcon from "@mui/icons-material/StoreMallDirectory";
+import FoodBankIcon from "@mui/icons-material/FoodBank";
 import HomeWorkRoundedIcon from "@mui/icons-material/HomeWorkRounded";
 import LocationCityRoundedIcon from "@mui/icons-material/LocationCityRounded";
 import TitleAndButton from "../ui/TitleAndButton";
@@ -24,16 +24,17 @@ import programming from "../../assets/icons/programming.png";
 import conding from "../../assets/icons/coding.png";
 import folder from "../../assets/icons/folder.png";
 import verified from "../../assets/icons/verified.png";
-
+import easy from "../../assets/icons/easy.png";
+import languageIcon from "../../assets/icons/languages.png";
+import monitorIcon from "../../assets/icons/monitor.png";
 import panel from "../../assets/icons/admin-panel.png";
 
 import credit from "../../assets/icons/credit-card.png";
 import tools from "../../assets/icons/tools.png";
-import dailyIcon from "../../assets/icons/24-hours-support.png";
+// import dailyIcon from "../../assets/icons/24-hours-support.png";
 import image2 from "../../assets/image24.png";
 import Lottie from "lottie-react";
-import pointIcon from "../../assets/animated-icons/point2.json";
-
+import daily from "../../assets/animated-icons/24.json";
 interface ThirdSectionProps {
   scrollToContact: (event: React.MouseEvent<HTMLDivElement>) => void;
 }
@@ -52,23 +53,23 @@ const ThirdSection: React.FC<ThirdSectionProps> = ({ scrollToContact }) => {
   const appType = [
     {
       title: "المراكز طبية",
-      icon: <MedicalServicesIcon className="w-6 h-6 mx-2 text-secondary" />,
+      icon: <LocalPharmacyIcon className="w-6 h-6 mx-2 text-secondary" />,
     },
     {
       title: "تجارة إلكترونية",
-      icon: <AddShoppingCartIcon className="w-6 h-6 mx-2 text-secondary" />,
+      icon: <ShoppingBagIcon className="w-6 h-6 mx-2 text-secondary" />,
     },
     {
       title: "المراكز التعليمية",
-      icon: <SchoolIcon className="w-6 h-6 mx-2 text-secondary" />,
+      icon: <AccountBalanceIcon className="w-6 h-6 mx-2 text-secondary" />,
     },
     {
       title: "الشحن والتوصيل",
-      icon: <LocalShippingIcon className="w-6 h-6 mx-2 text-secondary" />,
+      icon: <DeliveryDiningIcon className="w-6 h-6 mx-2 text-secondary" />,
     },
     {
       title: "الشركات العقارية",
-      icon: <ApartmentIcon className="w-6 h-6 mx-2 text-secondary" />,
+      icon: <BusinessIcon className="w-6 h-6 mx-2 text-secondary" />,
     },
     {
       title: "تأجير السيارات",
@@ -76,13 +77,11 @@ const ThirdSection: React.FC<ThirdSectionProps> = ({ scrollToContact }) => {
     },
     {
       title: "المراكز التجارية",
-      icon: <LocalMallRoundedIcon className="w-6 h-6 mx-2 text-secondary" />,
+      icon: <StoreMallDirectoryIcon className="w-6 h-6 mx-2 text-secondary" />,
     },
     {
       title: "المطاعم",
-      icon: (
-        <RestaurantMenuRoundedIcon className="w-6 h-6 mx-2 text-secondary" />
-      ),
+      icon: <FoodBankIcon className="w-6 h-6 mx-2 text-secondary" />,
     },
     {
       title: "خدمات منزلية",
@@ -140,6 +139,18 @@ const ThirdSection: React.FC<ThirdSectionProps> = ({ scrollToContact }) => {
       icon: seoIcon,
     },
     {
+      title: "سهولة في الاستخدام",
+      icon: easy,
+    },
+    {
+      title: "احصائيات وتقارير مفصلة",
+      icon: monitorIcon,
+    },
+    {
+      title: "يدعم اللغتين العربية و والإنجليزية",
+      icon: languageIcon,
+    },
+    {
       title: "اختيار محتوى مناسب",
       icon: contentIcon,
     },
@@ -156,18 +167,6 @@ const ThirdSection: React.FC<ThirdSectionProps> = ({ scrollToContact }) => {
       icon: contract1Icon,
     },
   ];
-  const services = [
-    "موقع امن وسريع",
-    "سهولة في الاستخدام",
-    "التحكم بالطالبات عن طريق الموقع",
-    "دعم لجميع طرق الدفع",
-    "سهولة إضافة الكوبونات والتخفيضات",
-    "يدعم تعدد العملات",
-    "احصائيات وتقارير مفصلة",
-    "يدعم اللغتين العربية و والإنجليزية",
-    "نظام نقاط البيع  مدمج مع الموقع لدعم الاستمرارية",
-    "ربط مع شركات التوصيل",
-  ];
 
   const itemVariants = {
     hidden: { opacity: 0, x: -40 },
@@ -176,7 +175,34 @@ const ThirdSection: React.FC<ThirdSectionProps> = ({ scrollToContact }) => {
 
   return (
     <div className="bg-slate-50" style={{ direction: "rtl" }}>
-      <div className="bg-secondary/10 py-10 px-2 md:px-20">
+      <div className="bg-secondary/10 py-8 text-center space-y-6">
+        <p className="text-primary text-2xl md:text-3xl font-bold font-header">
+          ضمان غير محدود المدة
+        </p>
+        <div className="flex flex-row gap-x-2 justify-center items-center">
+          <p className="font-header font-semibold text-secondary text-lg md:text-2xl">
+            دعم فني{" "}
+          </p>
+          {/* <img
+            src={dailyIcon}
+            alt="24/7"
+            className="w-10 h-10 md:w-14 md:h-14"
+          /> */}
+          <Lottie animationData={daily} className="w-16 h-16 md:w-20 md:h-20" />
+          <p className="font-header font-semibold text-secondary text-lg md:text-2xl">
+            تحديثات مستمرة
+          </p>
+        </div>
+        <p className=" font-header text-gray-700 px-5 text-justify md:px-16 text-base md:text-lg ">
+          سواء كنت تسعى لإطلاق مشروع جديد أو ترغب في تحسين وجودك على الإنترنت،
+          نحن هنا لتحويل أفكارك إلى واقع رقمي جذاب وفعّال. ابدأ اليوم واستمتع
+          بتجربة{" "}
+          <span className="text-primary font-semibold">موقع ويب استثنائية</span>{" "}
+          مع فريق{" "}
+          <span className="font-sans text-primary font-bold">سيي ميديا !</span>
+        </p>
+      </div>
+      <div className="bg-primary/10 py-10 px-2 md:px-20">
         <p className="text-2xl font-header font-bold text-primary text-center px-2 md:px-0 mt-8">
           ضمن عقود موثقة تضمن لك انجاز مشروعك على أكمل وجه
         </p>
@@ -191,7 +217,7 @@ const ThirdSection: React.FC<ThirdSectionProps> = ({ scrollToContact }) => {
           {features.map((item, index) => (
             <motion.div
               key={index}
-              className="flex flex-col justify-center items-center p-2 md:gap-y-5 shadow-md rounded-lg bg-gradient-to-tr from-primary/20 to-secondary/5 "
+              className="flex flex-col justify-center items-center p-2 md:gap-y-5"
               variants={itemVariants}
               initial="hidden"
               animate={featuresInView ? "visible" : "hidden"}
@@ -214,50 +240,6 @@ const ThirdSection: React.FC<ThirdSectionProps> = ({ scrollToContact }) => {
           الرقمية مع فريق{" "}
           <span className="font-sans text-primary font-bold">سيي ميديا</span>
         </p>
-      </div>
-
-      <div className="bg-primary/10 py-8 text-center space-y-6">
-        <p className="text-primary text-2xl md:text-3xl font-bold font-header">
-          ضمان غير محدود المدة
-        </p>
-        <div className="flex flex-row gap-x-2 justify-center items-center">
-          <p className="font-header font-semibold text-secondary text-lg md:text-2xl">
-            دعم فني{" "}
-          </p>
-          <img
-            src={dailyIcon}
-            alt="24/7"
-            className="w-10 h-10 md:w-14 md:h-14"
-          />
-          <p className="font-header font-semibold text-secondary text-lg md:text-2xl">
-            تحديثات مستمرة
-          </p>
-        </div>
-        <p className=" font-header text-gray-700 px-5 text-justify md:px-16 text-base md:text-lg ">
-          سواء كنت تسعى لإطلاق مشروع جديد أو ترغب في تحسين وجودك على الإنترنت،
-          نحن هنا لتحويل أفكارك إلى واقع رقمي جذاب وفعّال. ابدأ اليوم واستمتع
-          بتجربة{" "}
-          <span className="text-primary font-semibold">موقع ويب استثنائية</span>{" "}
-          مع فريق{" "}
-          <span className="font-sans text-primary font-bold">سيي ميديا !</span>
-        </p>
-        <div className="grid grid-flow-row grid-cols-3 md:grid-cols-6 gap-y-8 gap-x-4 mx-5 py-6 md:py-12">
-          {services.map((item, index) => (
-            <div
-              key={index}
-              className="flex flex-row justify-center items-start"
-            >
-              <Lottie animationData={pointIcon} className="w-8 h-6" />
-              <p className="font-header text-sm md:text-lg text-secondary">
-                {item}
-              </p>
-            </div>
-          ))}
-        </div>
-        <TitleAndButton
-          title="تواصل معنا الآن"
-          scrollToContact={scrollToContact}
-        />
       </div>
 
       <div className="px-2 md:px-20 py-10" ref={appTypeRef}>
@@ -294,6 +276,12 @@ const ThirdSection: React.FC<ThirdSectionProps> = ({ scrollToContact }) => {
         <p className="text-center font-header text-base md:text-2xl text-secondary font-semibold mt-6">
           وجميع مجالات الأعمال الأخرى
         </p>
+      </div>
+      <div className="mb-6">
+        <TitleAndButton
+          title="تواصل معنا الآن"
+          scrollToContact={scrollToContact}
+        />
       </div>
     </div>
   );

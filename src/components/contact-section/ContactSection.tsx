@@ -87,7 +87,7 @@ const ContactSection = () => {
   return (
     <div
       id="contactUs"
-      className="py-1 md:p-16 w-full bg-secondary/20"
+      className="py-1 md:p-16 w-full bg-primary/10"
       style={{ direction: "rtl" }}
     >
       <div className="w-[98%] m-auto max-w-[1400px]">

@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import TitleAndBody from "../ui/TitleAndBody";
 // import vedio from "../../assets/vedio.mp4";
 import TitleAndButton from "../ui/TitleAndButton";
+import Lottie from "lottie-react";
+import webIcon from "../../assets/animated-icons/webearning.json";
 
 interface SecondSectionProps {
   scrollToContact: (event: React.MouseEvent<HTMLDivElement>) => void;
@@ -37,7 +39,7 @@ const SecondSection: React.FC<SecondSectionProps> = ({ scrollToContact }) => {
 
   return (
     <motion.div
-      className="px-5 md:px-10 py-10 bg-gradient-to-r from-slate-200 to-slate-50"
+      className="px-5 md:px-10 py-10 bg-gradient-to-r from-secondary/20 to-slate-50"
       style={{ direction: "rtl" }}
       variants={containerVariants}
       initial="hidden"
@@ -45,13 +47,16 @@ const SecondSection: React.FC<SecondSectionProps> = ({ scrollToContact }) => {
     >
       <div className="text-center">
         <motion.p
-          className="text-secondary font-semibold font-header text-base md:text-2xl leading-relaxed"
+          className="text-primary font-semibold font-header text-2xl md:text-2xl leading-relaxed animate-pulse"
           variants={itemVariants}
         >
           اجذب العملاء بتجربة موقع ويب استثنائية. دعنا نبني لك منصة رقمية مذهلة
-          تعكس مدى ابتكار عملك.. اختر موقعك الآن من انواع تطبيقات المواقع
-          التالية
+          تعكس مدى ابتكار عملك..
         </motion.p>
+        <Lottie
+          animationData={webIcon}
+          className="h-auto w-full md:h-[320px]"
+        />
       </div>
       <div className="my-8 ">
         {/* <video
@@ -63,11 +68,15 @@ const SecondSection: React.FC<SecondSectionProps> = ({ scrollToContact }) => {
           autoPlay
         ></video> */}
       </div>
+
       <TitleAndButton
         title="صمم موقعك الآن"
         scrollToContact={scrollToContact}
       />
-      <div className="grid grid-flow-row grid-cols-1 md:grid-cols-3 mt-12 gap-y-8 md:gap-y-0">
+      <p className="text-primary text-center font-semibold font-header text-2xl md:text-2xl leading-relaxed animate-pulse mt-12">
+        اختر موقعك الآن من انواع تطبيقات المواقع التالية :
+      </p>
+      <div className="grid grid-flow-row grid-cols-1 md:grid-cols-3 mt-8 md:mt-12 gap-y-8 md:gap-y-0">
         <motion.div variants={itemVariants}>
           <TitleAndBody
             title="الموقع التعريفي"

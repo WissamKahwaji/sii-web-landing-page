@@ -19,6 +19,7 @@ const LandingPage = () => {
   return (
     <div>
       <FirstSection scrollToContact={scrollToContact} />
+
       <SecondSection scrollToContact={scrollToContact} />
       <SamplesSection scrollToContact={scrollToContact} />
       <ThirdSection scrollToContact={scrollToContact} />

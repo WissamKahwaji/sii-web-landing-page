@@ -31,7 +31,7 @@ const FirstSection: React.FC<FirstSectionProps> = ({ scrollToContact }) => {
   };
 
   return (
-    <div className="flex flex-col items-center text-center bg-primary/10 py-8 space-y-4 md:space-y-8">
+    <div className="flex flex-col items-center text-center bg-gradient-to-tr from-primary/80 to-secondary/5 py-8 space-y-4 md:space-y-8">
       <motion.div
         variants={containerVariants}
         initial="hidden"

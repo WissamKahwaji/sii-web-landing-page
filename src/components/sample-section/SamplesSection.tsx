@@ -79,7 +79,7 @@ const SamplesSection: React.FC<SamplesSectionProps> = ({ scrollToContact }) => {
             <img
               src={sample}
               alt={`sample-${index}`}
-              className="w-full h-full object-contain transition-transform transform hover:scale-105"
+              className="w-full h-full object-cover md:object-contain transition-transform transform hover:scale-105"
             />
           </div>
         ))}
