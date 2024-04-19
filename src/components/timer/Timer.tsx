@@ -41,9 +41,13 @@ const Timer = () => {
   }, [calculateTimeLeft]); // Include 'calculateTimeLeft' in the useEffect dependencies
 
   return (
-    <div className="text-center my-8  mx-4 md:mx-auto md:w-fit p-4 md:p-8 bg-gradient-to-r from-secondary/80  to-secondary/20 border  border-primary/50 rounded-md shadow-md shadow-primary/50">
-      <h2 className="text-lg font-bold mb-4 md:mb-8 font-header">
-        هذا العرض سينتهي قريبا !! تواصل معنا الان
+    <div className="text-center my-8  mx-4 md:mx-auto md:w-fit p-4 md:p-8 bg-gradient-to-tr from-secondary/50  to-secondary/20 border  border-primary/30 rounded-md shadow-md shadow-primary/30">
+      <h2
+        className="text-lg font-bold mb-4 md:mb-8 font-header"
+        style={{ direction: "rtl" }}
+      >
+        هذا العرض سينتهي قريبا !! <br />
+        تواصل معنا الان !
       </h2>
       <div className="flex justify-center space-x-4 font-header text-primary">
         <div className="flex flex-col items-center">

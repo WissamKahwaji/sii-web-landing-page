@@ -33,7 +33,7 @@ const Footer = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-r from-secondary/80 to-secondary/20 text-center pt-3 pb-3 px-2 space-y-3">
+    <div className="bg-gradient-to-tr from-secondary/50  to-secondary/20 text-center pt-3 pb-3 px-2 space-y-3">
       <p className="font-header font-bold text-primary text-sm md:text-lg mt-4 md:mt-8 mb-8">
         تفضلوا بزيارتنا أو التواصل عبر وسائل التواصل الإجتماعي
       </p>

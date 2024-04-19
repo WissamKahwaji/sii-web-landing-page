@@ -53,8 +53,7 @@ const ReviewSection = () => {
           بعض آراء عملائنا
         </p>
         <p className="font-header font-semibold text-xs md:text-lg text-center mb-5 text-gray-700">
-          اكتشف ما يقوله عملاؤنا عن تجاربهم معنا من خلال تقييمات العملاء الثاقبة
-          هذه
+          اكتشف ما يقوله عملاؤنا عن تجاربهم معنا
         </p>
         <Slider {...settings} className="">
           {customerReviews.map(review => (

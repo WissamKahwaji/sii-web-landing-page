@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import Lottie from "lottie-react";
-import animyIcon from "../../assets/animated-icons/form2.json";
+import animyIcon from "../../assets/animated-icons/webIcon2.json";
 
 interface FirstSectionProps {
   scrollToContact: (event: React.MouseEvent<HTMLDivElement>) => void;
@@ -31,14 +31,14 @@ const FirstSection: React.FC<FirstSectionProps> = ({ scrollToContact }) => {
   };
 
   return (
-    <div className="flex flex-col items-center text-center bg-gradient-to-tr from-primary/80 to-secondary/5 py-8 space-y-4 md:space-y-8">
+    <div className="flex flex-col items-center text-center bg-primary/10 py-8 space-y-4 md:space-y-8">
       <motion.div
         variants={containerVariants}
         initial="hidden"
         animate="visible"
       >
         <p className="font-bold font-header text-2xl md:text-3xl text-primary px-2">
-          موقعك الإلكتروني رحلتك الرقمية نحو المستقبل
+          موقعك الالكتروني رحلتك <br /> نحو مستقبل رقمي متطور
         </p>
         <p className="text-gray-700  font-medium text-base md:text-lg mt-3">
           أجعل وجودك الرقمي لافتاً ومميزاً بأفضل موقع الكتروني بميزات لا حدود
@@ -56,7 +56,7 @@ const FirstSection: React.FC<FirstSectionProps> = ({ scrollToContact }) => {
           variants={buttonVariants}
           whileHover="hover"
         >
-          <Lottie animationData={animyIcon} className="h-52 w-60" />
+          <Lottie animationData={animyIcon} className="h-80 w-full" />
           <div className="p-4 bg-gradient-to-tr from-secondary to-secondary/60 rounded-md animate-shake mx-5 md:mx-auto">
             <p className="text-white font-header font-bold text-lg md:text-2xl ">
               ادعم انطلاقة مشروعك بامتلاك لموقع الكتروني وعزز التفاعل مع عملائك

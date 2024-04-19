@@ -244,7 +244,8 @@ const ThirdSection: React.FC<ThirdSectionProps> = ({ scrollToContact }) => {
 
       <div className="px-2 md:px-20 py-10" ref={appTypeRef}>
         <p className="text-center font-header text-2xl text-primary font-semibold">
-          نقوم بإنشاء موقعك بأي فكرة تخطر ببالك
+          نقوم بإنشاء موقعك <br />
+          بأي فكرة تخطر ببالك
         </p>
         <div className="p-4 bg-gradient-to-tr from-secondary to-secondary/70 rounded-sm mt-3 mx-5 md:mx-auto md:w-fit">
           <p className="text-center font-header font-semibold text-base md:text-base text-white">

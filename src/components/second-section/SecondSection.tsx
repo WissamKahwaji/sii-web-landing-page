@@ -47,11 +47,11 @@ const SecondSection: React.FC<SecondSectionProps> = ({ scrollToContact }) => {
     >
       <div className="text-center">
         <motion.p
-          className="text-primary font-semibold font-header text-2xl md:text-2xl leading-relaxed animate-pulse"
+          className="text-primary font-semibold font-header text-lg md:text-2xl leading-relaxed animate-pulse"
           variants={itemVariants}
         >
-          اجذب العملاء بتجربة موقع ويب استثنائية. دعنا نبني لك منصة رقمية مذهلة
-          تعكس مدى ابتكار عملك..
+          اجذب العملاء بتجربة موقع ويب استثنائية. <br />
+          دعنا نبني لك منصة رقمية مذهلة تعكس مدى ابتكار عملك..
         </motion.p>
         <Lottie
           animationData={webIcon}
@@ -74,7 +74,7 @@ const SecondSection: React.FC<SecondSectionProps> = ({ scrollToContact }) => {
         scrollToContact={scrollToContact}
       />
       <p className="text-primary text-center font-semibold font-header text-2xl md:text-2xl leading-relaxed animate-pulse mt-12">
-        اختر موقعك الآن من انواع تطبيقات المواقع التالية :
+        اختر موقعك الآن من انواع المواقع التالية :
       </p>
       <div className="grid grid-flow-row grid-cols-1 md:grid-cols-3 mt-8 md:mt-12 gap-y-8 md:gap-y-0">
         <motion.div variants={itemVariants}>

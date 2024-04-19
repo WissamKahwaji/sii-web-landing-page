@@ -96,7 +96,8 @@ const ContactSection = () => {
             تواصل معنا الان !
           </h3>
           <p className="text-secondary max-w-xl mx-auto font-header  text-base md:text-lg">
-            نحب أن نسمع منك! سنتواصل معك في أقرب وقت خلال 24 - 48 ساعة.
+            نحب أن نسمع منك! سنتواصل معك في أقرب وقت <br />
+            خلال 24 - 48 ساعة.
           </p>
           <p className=" text-gray-600 mt-2 text-sm md:text-lg">
             اتخذ قرار التغيير و تواصل مع فريق{" "}
