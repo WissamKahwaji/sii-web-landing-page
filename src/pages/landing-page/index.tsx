@@ -6,6 +6,7 @@ import ReviewSection from "../../components/review-section/ReviewSection";
 import SecondSection from "../../components/second-section/SecondSection";
 import SamplesSection from "../../components/sample-section/SamplesSection";
 import ThirdSection from "../../components/third-section/ThirdSection";
+import Timer from "../../components/timer/Timer";
 
 const LandingPage = () => {
   const contactSectionRef = useRef<HTMLDivElement>(null);
@@ -26,6 +27,7 @@ const LandingPage = () => {
         <ContactSection />
       </div>
       <LinkSection />
+      <Timer />
     </div>
   );
 };

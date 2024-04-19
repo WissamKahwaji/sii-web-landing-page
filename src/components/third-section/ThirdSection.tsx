@@ -30,7 +30,7 @@ import panel from "../../assets/icons/admin-panel.png";
 import credit from "../../assets/icons/credit-card.png";
 import tools from "../../assets/icons/tools.png";
 import dailyIcon from "../../assets/icons/24-hours-support.png";
-import image2 from "../../assets/image3 new.png";
+import image2 from "../../assets/image24.png";
 import Lottie from "lottie-react";
 import pointIcon from "../../assets/animated-icons/point2.json";
 
@@ -52,43 +52,45 @@ const ThirdSection: React.FC<ThirdSectionProps> = ({ scrollToContact }) => {
   const appType = [
     {
       title: "المراكز طبية",
-      icon: <MedicalServicesIcon className="w-6 h-6 mx-2 text-primary" />,
+      icon: <MedicalServicesIcon className="w-6 h-6 mx-2 text-secondary" />,
     },
     {
       title: "تجارة إلكترونية",
-      icon: <AddShoppingCartIcon className="w-6 h-6 mx-2 text-primary" />,
+      icon: <AddShoppingCartIcon className="w-6 h-6 mx-2 text-secondary" />,
     },
     {
       title: "المراكز التعليمية",
-      icon: <SchoolIcon className="w-6 h-6 mx-2 text-primary" />,
+      icon: <SchoolIcon className="w-6 h-6 mx-2 text-secondary" />,
     },
     {
       title: "الشحن والتوصيل",
-      icon: <LocalShippingIcon className="w-6 h-6 mx-2 text-primary" />,
+      icon: <LocalShippingIcon className="w-6 h-6 mx-2 text-secondary" />,
     },
     {
       title: "الشركات العقارية",
-      icon: <ApartmentIcon className="w-6 h-6 mx-2 text-primary" />,
+      icon: <ApartmentIcon className="w-6 h-6 mx-2 text-secondary" />,
     },
     {
       title: "تأجير السيارات",
-      icon: <CarRentalRoundedIcon className="w-6 h-6 mx-2 text-primary" />,
+      icon: <CarRentalRoundedIcon className="w-6 h-6 mx-2 text-secondary" />,
     },
     {
       title: "المراكز التجارية",
-      icon: <LocalMallRoundedIcon className="w-6 h-6 mx-2 text-primary" />,
+      icon: <LocalMallRoundedIcon className="w-6 h-6 mx-2 text-secondary" />,
     },
     {
       title: "المطاعم",
-      icon: <RestaurantMenuRoundedIcon className="w-6 h-6 mx-2 text-primary" />,
+      icon: (
+        <RestaurantMenuRoundedIcon className="w-6 h-6 mx-2 text-secondary" />
+      ),
     },
     {
       title: "خدمات منزلية",
-      icon: <HomeWorkRoundedIcon className="w-6 h-6 mx-2 text-primary" />,
+      icon: <HomeWorkRoundedIcon className="w-6 h-6 mx-2 text-secondary" />,
     },
     {
       title: "شركات التأمين",
-      icon: <LocationCityRoundedIcon className="w-6 h-6 mx-2 text-primary" />,
+      icon: <LocationCityRoundedIcon className="w-6 h-6 mx-2 text-secondary" />,
     },
   ];
 
@@ -189,7 +191,7 @@ const ThirdSection: React.FC<ThirdSectionProps> = ({ scrollToContact }) => {
           {features.map((item, index) => (
             <motion.div
               key={index}
-              className="flex flex-col justify-center items-center space-y-2 md:gap-y-5"
+              className="flex flex-col justify-center items-center p-2 md:gap-y-5 shadow-md rounded-lg bg-gradient-to-tr from-primary/20 to-secondary/5 "
               variants={itemVariants}
               initial="hidden"
               animate={featuresInView ? "visible" : "hidden"}
@@ -199,7 +201,7 @@ const ThirdSection: React.FC<ThirdSectionProps> = ({ scrollToContact }) => {
                 alt={item.title}
                 className="w-8 h-8 md:w-10 md:h-10 text-primary"
               />
-              <div className="border-t pt-2 h-10 border-secondary">
+              <div className="border-t pt-2 h-8 md:h-16 border-secondary">
                 <p className="text-[8.2px] md:text-base font-header text-primary font-bold text-center">
                   {item.title}
                 </p>
@@ -232,11 +234,11 @@ const ThirdSection: React.FC<ThirdSectionProps> = ({ scrollToContact }) => {
           </p>
         </div>
         <p className=" font-header text-gray-700 px-5 text-justify md:px-16 text-base md:text-lg ">
-          اجذب واستمتع بتجربة إبداعية فريدة مع خدمتنا لإنشاء مواقع الويب! سواء
-          كنت تسعى لإطلاق مشروع جديد أو ترغب في تحسين وجودك على الإنترنت، نحن
-          هنا لتحويل أفكارك إلى واقع رقمي جذاب وفعّال. اعتمد على خبرتنا في
-          التصميم والتطوير لنوفر لك أفضل الحلول التقنية والإبداعية. ابدأ اليوم
-          واستمتع بتجربة موقع ويب استثنائية مع فريق{" "}
+          سواء كنت تسعى لإطلاق مشروع جديد أو ترغب في تحسين وجودك على الإنترنت،
+          نحن هنا لتحويل أفكارك إلى واقع رقمي جذاب وفعّال. ابدأ اليوم واستمتع
+          بتجربة{" "}
+          <span className="text-primary font-semibold">موقع ويب استثنائية</span>{" "}
+          مع فريق{" "}
           <span className="font-sans text-primary font-bold">سيي ميديا !</span>
         </p>
         <div className="grid grid-flow-row grid-cols-3 md:grid-cols-6 gap-y-8 gap-x-4 mx-5 py-6 md:py-12">
@@ -262,7 +264,7 @@ const ThirdSection: React.FC<ThirdSectionProps> = ({ scrollToContact }) => {
         <p className="text-center font-header text-2xl text-primary font-semibold">
           نقوم بإنشاء موقعك بأي فكرة تخطر ببالك
         </p>
-        <div className="p-4 bg-primary rounded-sm mt-3 mx-5 md:mx-auto md:w-fit">
+        <div className="p-4 bg-gradient-to-tr from-secondary to-secondary/70 rounded-sm mt-3 mx-5 md:mx-auto md:w-fit">
           <p className="text-center font-header font-semibold text-base md:text-base text-white">
             دعنا نحول أفكارك إلى واقع رقمي مبتكر يبرز علامتك التجارية ويجذب
             العملاء
@@ -270,12 +272,12 @@ const ThirdSection: React.FC<ThirdSectionProps> = ({ scrollToContact }) => {
         </div>
         <div className="mt-14 grid grid-flow-row grid-cols-1 md:grid-cols-2 space-x-4">
           <img src={image2} alt="mobile" />
-          <div>
+          <div className="mt-5 md:mt-0 mx-auto w-full md:mr-4">
             <div className="grid grid-cols-2 md:grid-cols-2 gap-4 ">
               {appType.map((item, index) => (
                 <motion.div
                   key={index}
-                  className="flex items-center p-3 my-2"
+                  className="flex items-center p-3 my-2 "
                   variants={itemVariants}
                   initial="hidden"
                   animate={appTypeInView ? "visible" : "hidden"}

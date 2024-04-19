@@ -31,14 +31,14 @@ const FirstSection: React.FC<FirstSectionProps> = ({ scrollToContact }) => {
   };
 
   return (
-    <div className="flex flex-col items-center text-center bg-secondary/10 py-8 space-y-4 md:space-y-8">
+    <div className="flex flex-col items-center text-center bg-primary/10 py-8 space-y-4 md:space-y-8">
       <motion.div
         variants={containerVariants}
         initial="hidden"
         animate="visible"
       >
         <p className="font-bold font-header text-2xl md:text-3xl text-primary px-2">
-          موقعك الإلكتروني هو بوابتك الرقمية وأحد أسباب نجاحك
+          موقعك الإلكتروني رحلتك الرقمية نحو المستقبل
         </p>
         <p className="text-gray-700  font-medium text-base md:text-lg mt-3">
           أجعل وجودك الرقمي لافتاً ومميزاً بأفضل موقع الكتروني بميزات لا حدود
@@ -57,12 +57,12 @@ const FirstSection: React.FC<FirstSectionProps> = ({ scrollToContact }) => {
           whileHover="hover"
         >
           <Lottie animationData={animyIcon} className="h-52 w-60" />
-          <div className="p-4 bg-primary rounded-md animate-shake mx-5 md:mx-auto">
+          <div className="p-4 bg-gradient-to-tr from-secondary to-secondary/60 rounded-md animate-shake mx-5 md:mx-auto">
             <p className="text-white font-header font-bold text-lg md:text-2xl ">
               ادعم انطلاقة مشروعك بامتلاك لموقع الكتروني وعزز التفاعل مع عملائك
             </p>
             <p className="text-white font-header font-bold text-lg md:text-2xl ">
-              تواصل معنا وتقدم على منافسيك
+              لا تتردد بالتواصل معنا
             </p>
           </div>
         </motion.div>

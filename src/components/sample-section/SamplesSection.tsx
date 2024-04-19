@@ -61,7 +61,7 @@ const SamplesSection: React.FC<SamplesSectionProps> = ({ scrollToContact }) => {
     },
   };
   return (
-    <div className="bg-seconBackground px-3 text-center py-8">
+    <div className="bg-background/90 px-3 text-center py-8">
       <p className="text-2xl md:text-3xl font-header font-bold text-primary text-center mb-5">
         بعض من أعمالنا
       </p>
@@ -84,10 +84,10 @@ const SamplesSection: React.FC<SamplesSectionProps> = ({ scrollToContact }) => {
           </div>
         ))}
       </Carousel>
-      <div className="p-4 w-fit bg-primary md:mx-auto mt-4 mb-6 mx-4 rounded-sm">
+      <div className="p-4 w-fit bg-gradient-to-tr from-secondary to-secondary/70 md:mx-auto mt-4 mb-6 mx-4 rounded-sm">
         <p className="font-header text-lg md:text-2xl text-white my-3 md:my-6 animate-pulse">
-          انطلق نحو النجاح عبر الويب معنا. نحن شركاءك الموثوقين في تحويل فكرتك
-          إلى واقع رقمي لا يُنسى.
+          نقدم لك حلولاً مبتكرة ومتكاملة في مجال تصميم وتطوير مواقع الويب التي
+          تلبي احتياجات مجال عملك وتفوق توقعات عملائك
         </p>
       </div>
       <TitleAndButton

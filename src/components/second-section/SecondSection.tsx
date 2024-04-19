@@ -37,7 +37,7 @@ const SecondSection: React.FC<SecondSectionProps> = ({ scrollToContact }) => {
 
   return (
     <motion.div
-      className="mx-5 md:mx-10 py-10"
+      className="px-5 md:px-10 py-10 bg-gradient-to-r from-slate-200 to-slate-50"
       style={{ direction: "rtl" }}
       variants={containerVariants}
       initial="hidden"
