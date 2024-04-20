@@ -38,13 +38,13 @@ const FirstSection: React.FC<FirstSectionProps> = ({ scrollToContact }) => {
         animate="visible"
       >
         <p className="font-bold font-header text-2xl md:text-3xl text-primary px-2">
-          موقعك الالكتروني رحلتك <br /> نحو مستقبل رقمي متطور
+          موقعك الإلكتروني رحلتك <br /> نحو مستقبل رقمي متطور
         </p>
         <p className="text-gray-700  font-medium text-base md:text-lg mt-3">
-          أجعل وجودك الرقمي لافتاً ومميزاً بأفضل موقع الكتروني بميزات لا حدود
-          لها مع فريق{" "}
+          أجعل وجودك الرقمي لافتاً ومميزاً بأفضل موقع الكتروني <br />
+          بميزات لا حدود لها مع فريق{" "}
           <span className="text-secondary font-bold text-lg md:text-2xl">
-            سيي ميديا المختص
+            سيي ميديا المتخصص
           </span>
         </p>
         <motion.div

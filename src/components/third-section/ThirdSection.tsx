@@ -193,11 +193,12 @@ const ThirdSection: React.FC<ThirdSectionProps> = ({ scrollToContact }) => {
             تحديثات مستمرة
           </p>
         </div>
-        <p className=" font-header text-gray-700 px-5 text-justify md:px-16 text-base md:text-lg ">
+        <p className=" font-header text-gray-700 px-5 text-center md:px-16 text-base md:text-lg ">
           سواء كنت تسعى لإطلاق مشروع جديد أو ترغب في تحسين وجودك على الإنترنت،
           نحن هنا لتحويل أفكارك إلى واقع رقمي جذاب وفعّال. ابدأ اليوم واستمتع
           بتجربة{" "}
           <span className="text-primary font-semibold">موقع ويب استثنائية</span>{" "}
+          <br />
           مع فريق{" "}
           <span className="font-sans text-primary font-bold text-2xl">
             سيي ميديا !
@@ -209,8 +210,8 @@ const ThirdSection: React.FC<ThirdSectionProps> = ({ scrollToContact }) => {
           ضمن عقود موثقة تضمن لك انجاز مشروعك على أكمل وجه
         </p>
         <p className="text-base font-header font-bold text-secondary text-center px-2 md:px-0 mt-7 mb-12">
-          نمزج الجمال بالتصميمات لتحصل على تصميم متجانس يراعي الهوية و أساسيات
-          التصميم
+          لتحصل على تصميم متجانس يراعي الهوية و أساسيات التصميم <br />
+          والعديد من المميزات الأخرى
         </p>
         <div
           className="grid grid-flow-row grid-cols-3 md:grid-cols-6 gap-8 md:gap-8 mt-8"
@@ -238,7 +239,8 @@ const ThirdSection: React.FC<ThirdSectionProps> = ({ scrollToContact }) => {
           ))}
         </div>
         <p className="text-lg md:text-lg font-header  text-gray-600 mt-6 md:mt-12 text-center ">
-          استثمر في موقع ويب فريد يبرزك بين المنافسين. <br />
+          استثمر في <span className="text-primary font-semibold">موقع ويب</span>{" "}
+          فريد يبرزك بين المنافسين. <br />
           استعد لتحقيق أحلامك الرقمية <br />
           مع فريق{" "}
           <span className="font-sans text-primary font-bold">سيي ميديا</span>
