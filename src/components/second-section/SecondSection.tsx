@@ -4,6 +4,7 @@ import TitleAndBody from "../ui/TitleAndBody";
 import TitleAndButton from "../ui/TitleAndButton";
 import Lottie from "lottie-react";
 import webIcon from "../../assets/animated-icons/webearning.json";
+import vedio from "../../assets/vedio.mp4";
 
 interface SecondSectionProps {
   scrollToContact: (event: React.MouseEvent<HTMLDivElement>) => void;
@@ -59,22 +60,23 @@ const SecondSection: React.FC<SecondSectionProps> = ({ scrollToContact }) => {
         />
       </div>
       <div className="my-8 ">
-        {/* <video
+        <video
           controls
           className="max-w-full md:h-[450px] mx-auto"
           src={vedio}
           typeof="video/mp4"
           muted
           autoPlay
-        ></video> */}
+        ></video>
       </div>
 
       <TitleAndButton
         title="صمم موقعك الآن"
         scrollToContact={scrollToContact}
       />
-      <p className="text-primary text-center font-semibold font-header text-2xl md:text-2xl leading-relaxed animate-pulse mt-12">
-        اختر موقعك الآن من انواع المواقع التالية :
+      <p className="text-primary  text-center font-semibold font-header text-2xl md:text-2xl leading-relaxed animate-pulse mt-12">
+        نساعدك في اختيار نوع الموقع المتناسب مع أهدافك <br />
+        واحتياجات عملك:
       </p>
       <div className="grid grid-flow-row grid-cols-1 md:grid-cols-3 mt-8 md:mt-12 gap-y-8 md:gap-y-0">
         <motion.div variants={itemVariants}>
