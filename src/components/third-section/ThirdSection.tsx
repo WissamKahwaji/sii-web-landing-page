@@ -210,7 +210,7 @@ const ThirdSection: React.FC<ThirdSectionProps> = ({ scrollToContact }) => {
           ضمن عقود موثقة تضمن لك انجاز مشروعك على أكمل وجه
         </p>
         <p className="text-base font-header font-bold text-secondary text-center px-2 md:px-0 mt-7 mb-12">
-          لتحصل على تصميم متجانس يراعي الهوية و أساسيات التصميم <br />
+          لتحصل على تصميم متجانس يراعي الهوية وأساسيات التصميم <br />
           والعديد من المميزات الأخرى
         </p>
         <div
